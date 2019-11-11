@@ -10,7 +10,7 @@ VOLUME /var/app
 COPY ./build.sh /var
 COPY ./startup.sh /var
 
-RUN chmod +x /var/startup.sh && chmod +x /var/build.sh && chmod +x /var/cron.sh
+RUN chmod +x /var/startup.sh && chmod +x /var/build.sh
 RUN /var/build.sh
 
 EXPOSE 3000
